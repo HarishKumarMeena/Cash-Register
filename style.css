@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+    table {
+        padding: 0rem 3.2rem;
+    }
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    background-color: #312e81;
+    margin: auto;
+    text-align: center;
+    color: white;
+    border: 2px solid #312e81;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 1rem;
+}
+
+
+p, label, caption {
+    font-size: large;
+}
+
+
+table {
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin: auto;
+    font-size: larger;
+}
+
+input {
+    max-width: 200px;
+    margin: auto;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: large;
+}
+
+button {
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    background-color: #312e81;
+    color: white;
+    font-size: larger;
+
+}
