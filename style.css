@@ -2,9 +2,21 @@ body {
     margin: 0;
 }
 
+@media screen and (max-width: 320px) {
+    body {
+        font-size: xx-small;
+    }
+  }
+
 @media screen and (min-width: 480px) {
     table {
         padding: 0rem 3.2rem;
+    }
+  }
+
+  @media screen and (min-width: 970px) {
+    table th, td {
+        padding: 0rem 2.5rem 0rem 0rem;
     }
   }
 

@@ -5,7 +5,7 @@ var message = document.querySelector("#error-message");
 var noOfNotes = document.querySelectorAll(".no-of-notes");
 
 
-var availableNotes = [2000, 500, 100, 20, 10, 5, 1];
+var availableNotes = [2000, 500, 100,50, 20, 10, 5, 1];
 
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
@@ -17,6 +17,12 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
         message.innerHTML = "Thora aur ganit par leejye aap"
         console.log(billAmount.value);
     } 
+
+    else if(cashGiven.value < 0)
+    {
+        message.style.display = "block";
+        message.innerHTML = "Bhai saabh aapko muje paise dene hai muje aap ko nahi dene apna hishab sahi keejye"
+    }
 
     else if (amountToReturn < 0) {
         message.style.display = "block";
